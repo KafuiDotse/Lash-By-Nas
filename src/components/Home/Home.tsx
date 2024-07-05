@@ -2,7 +2,7 @@ import './Home.css'
 import { Link } from 'react-router-dom';
 import Hero1 from '../../assets/images/hero1.png'
 import About_us from '../../assets/images/about_us.jpg'
-import About_us_vid from '../../assets/videos/about_us_vid.mp4'
+import Volume from '../../assets/images/volume.jpg'
 import Button from '../Button/Button';
 
 function Home(){
@@ -22,7 +22,7 @@ function Home(){
                     <img src={Hero1} alt="hero" />
                 </div>
             </div>
-
+            {/* About */}
             <div className="about">
                 <h1>Who we are</h1>
                 <div className="about-container">
@@ -34,11 +34,27 @@ function Home(){
                         </div>
                     </div>
                 </div>
-                <div className="about-video container">
-                    <video src={About_us_vid} autoPlay controls loop></video>
+            </div>
+            {/* Our services */}
+            <div className="our-services">
+                <h1>Our Services</h1>
+                <div className='cards-container '>
+                    <div className='container'>
+                        <p>What we offer</p>
+                        <div className='service-cards'>
+                            <div className="service-card">
+                                <img src={Volume} alt="" />
+                                <div className="hover-screen">
+                                    <span className='name'>Volume</span>
+                                    <span className='price'>Gh₵ 200</span>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-        
         </>
     )
 }
