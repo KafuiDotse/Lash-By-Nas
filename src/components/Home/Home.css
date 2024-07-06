@@ -46,8 +46,6 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    background-color: var(--background);
-    /* flex-wrap: wrap; */
     padding-inline: 10%;
 
 }
@@ -97,18 +95,25 @@
 
 .service-cards{
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    /* gap: 100px; */
 }
 
 .service-card{
-    max-width:fit-content;
-    overflow: hidden;
+    max-width:210px;
+    height: 100%;
+    overflow:hidden;
     position: relative;
-    max-width: 20%;
+    border-radius: 2%;
 }
 
 .service-card img{
     max-width: 20rem;
-    height: auto;
+    height: 300px;
 }
 
 .hover-screen{
@@ -116,7 +121,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height:100%;
     transform: translateY(250px);
     opacity: 0;
     transition: all 0.3s ease ;
@@ -148,6 +153,10 @@
 
     .about-text{
         max-width: 100%;
+    }
+
+    .service-cards{
+        gap: 20px;
     }
 }
 
@@ -247,4 +256,14 @@
         min-width: 200px;
     }
     
+    .service-cards{
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .hover-screen{
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
 }

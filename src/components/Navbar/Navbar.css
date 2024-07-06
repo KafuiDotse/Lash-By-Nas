@@ -1,6 +1,7 @@
 nav{
     position: sticky;
     top:0;
+    z-index: 10;
 }
 
 .logo-link{
@@ -32,7 +33,7 @@ nav .navbar{
     justify-content: space-between;
     align-items: center;
     background-color: var(--background);
-    opacity: 0.99;
+    opacity: 0.97;
     color:var(--font-color);
     padding-block:5px;
     position: relative;

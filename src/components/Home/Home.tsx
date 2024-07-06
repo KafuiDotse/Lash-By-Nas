@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Hero1 from '../../assets/images/hero1.png'
 import About_us from '../../assets/images/about_us.jpg'
 import Volume from '../../assets/images/volume.jpg'
+import MegaVolume from '../../assets/images/mega volume.jpg'
+import Classic from '../../assets/images/classic.jpg'
+import Hybrid from '../../assets/images/hybrid.jpg'
 import Button from '../Button/Button';
 
 function Home(){
@@ -46,11 +49,33 @@ function Home(){
                                 <img src={Volume} alt="" />
                                 <div className="hover-screen">
                                     <span className='name'>Volume</span>
-                                    <span className='price'>Gh₵ 200</span>
-                                    
+                                    <span className='price'>Gh₵ 350</span>  
                                 </div>
                             </div>
-                            
+
+                             <div className="service-card">
+                                <img src={MegaVolume} alt="" />
+                                <div className="hover-screen">
+                                    <span className='name'>Mega Volume</span>
+                                    <span className='price'>Gh₵ 400</span>  
+                                </div>
+                            </div>
+
+                            <div className="service-card">
+                                <img src={Classic} alt="" />
+                                <div className="hover-screen">
+                                    <span className='name'>Classic Set</span>
+                                    <span className='price'>Gh₵ 200</span>  
+                                </div>
+                            </div>
+
+                            <div className="service-card">
+                                <img src={Hybrid} alt="" />
+                                <div className="hover-screen">
+                                    <span className='name'>Hybrid</span>
+                                    <span className='price'>Gh₵ 280</span>  
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
