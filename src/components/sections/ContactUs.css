@@ -1,0 +1,240 @@
+.contact-section{
+    text-align: center;
+    margin-block:100px;
+}
+.contact-section-container{
+    margin-top: 70px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.left-section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:10px;
+    background-color:var(--background);
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.arrow{
+    position:absolute;
+    top: 47%;
+    right: 90px;
+    color: var(--font-color);
+}
+
+.left-section img{
+    width: clamp(200px,20vw,400px);
+    height: auto;
+}
+
+.left-section p{
+    font-size: 18px;
+    max-width: 300px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 30%;
+    right: -40px;
+    font-weight: 500;
+    color:var(--font-color);
+}
+
+.ipt{
+    background-color: var(--background);
+    color: var(--placeholder);
+    border:0;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    padding-inline: 20px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    /* max-width: 200px; */
+}
+
+.full-name{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.messages-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.email{
+    background-color: var(--background);
+    color: var(--placeholder);
+    border:0;
+    border-radius: 5px;
+    width: 92%;
+    height: 50px;
+    padding-inline: 20px;
+}
+
+.messages-section textarea{
+    background-color: var(--background);
+    color: var(--placeholder);
+    border:0;
+    border-radius: 5px;
+    padding-inline: 20px;
+    padding-top: 10px;
+}
+
+::-webkit-input-placeholder{
+    color:var(--placeholder);
+}
+
+input:focus{
+    outline-color: var(--placeholder);
+}
+
+textarea:focus{
+    outline-color: var(--placeholder);
+}
+
+@media(max-width:1024px){
+    .about-text-container{
+        padding-inline: 5%;
+    }
+
+    .about-text{
+        max-width: 100%;
+    }
+
+    .service-cards{
+        gap: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .hero img{
+        max-width: 400px;
+        min-width: 100px;
+        height: auto;
+    }
+    
+    .text{
+        max-width: 300px;
+        padding-top: 10px;
+    }    
+
+    .hero h1{
+        font-size: 3vw;
+        max-width:300px ;
+        min-width: 200px;
+        text-transform: capitalize;
+    }
+    
+    .hero p{
+        font-size: 1.5vw;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        max-width:300px ;
+        min-width: 200px;
+    }
+    
+    .about-container img{
+        max-width: 300px;
+    }
+
+    .about-text-container{
+        padding-inline: 5%;
+    }
+
+    .about-text{
+        max-width: 100%;
+    }
+
+    .hover-screen{
+        justify-content: start;
+        height: 20%;
+        top:80%;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@media(max-width:660px){
+    .hero .container{
+        flex-direction: column-reverse;
+    }
+
+    .hero h1{
+        font-size: 5vw;
+        max-width:300px ;
+        min-width: 200px;
+        text-transform: capitalize;
+    }
+    
+    .hero p{
+        font-size: 2.5vw;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        max-width:300px ;
+        min-width: 200px;
+    }
+
+    .about-container img{
+        max-width: 300px;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-text-container{
+        padding-inline: 1%;
+    }
+
+    .about-text{
+        max-width: 100%;
+    }
+    .service-cards{
+        justify-content: center;
+        gap: 70px;
+    }
+    
+}
+
+@media(max-width:434px){
+    .hero img{
+        max-width: 300px;
+    }
+
+    .hero h1{
+        font-size: 7vw;
+        min-width: 200px;
+        text-transform: capitalize;
+    }
+    
+    .hero p{
+        font-size: 3.5vw;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        min-width: 200px;
+    }
+    
+    .service-cards{
+        justify-content: center;
+        gap: 70px;
+    }
+}
