@@ -1,0 +1,14 @@
+.btn{
+    border: 0px;
+    border-radius: 2px;
+    background-color: var(--primary);
+    padding: 10px 15px;
+}
+
+.btn:hover{
+    background-color: rgb(255, 200, 200);
+}
+
+.btn:active{
+    background-color: var(--primary);
+}
