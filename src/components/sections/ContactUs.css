@@ -5,7 +5,7 @@
 .contact-section-container{
     margin-top: 70px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     gap: 70px;
 }
@@ -17,61 +17,54 @@
     justify-content: start;
     align-items: start;
     /* gap:10px; */
-    background-color:var(--background);
     width:100%;
-    position: relative;
     padding-top: 10px;
 }
 
-.arrow{
-    position:absolute;
-    top: 47%;
-    right: 90px;
-    color: var(--font-color);
+.img-container{
+    background-color:var(--background);
+    border-radius: 0px 30px 0px 30px;
+    padding-inline: 20px;
+    padding-top:10px;
+    width: 80%;
+    display: flex;
+    align-items: baseline;
 }
 
 .left-section img{
-    width: clamp(200px,20vw,400px);
+    width: clamp(150px,20vw,400px);
     height: auto;
 }
 
 .left-section p{
-    font-size: 18px;
+    font-size: 16px;
     max-width: 300px;
-    padding: 10px 10px;
-    position: absolute;
-    top: 30%;
-    right: -40px;
-    font-weight: 500;
-    color:var(--font-color);
-}
-
-.ipt{
-    background-color: var(--background);
-    color: var(--placeholder);
-    border:0;
-    border-radius: 5px;
-    width: 50%;
-    height: 50px;
-    padding-inline: 20px;
+    line-height: 22px;
+    margin-top: 6px;
 }
 
 .right-section{
     display: flex;
-    flex-direction: column;
-    align-items: start;
     justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
     gap: 20px;
-    width: clamp(200px,35vw,500px);
-    flex-grow: 1;
 }
 
 .full-name{
-    margin-bottom: 20px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    gap: 10px;
+    gap: 20px;
+}
+
+.full-name input{
+    padding: 15px;
+    background-color: var(--background);
+    border:0;
+    border-radius: 3px;
+    color: var(--placeholder);
 }
 
 .messages-section{
@@ -81,25 +74,22 @@
     width: 100%;
 }
 
-.email{
+.messages-section input{
+    padding: 15px;
     background-color: var(--background);
-    color: var(--placeholder);
     border:0;
-    border-radius: 5px;
-    width:100%;
-    height: 50px;
-    padding-inline: 20px;
+    border-radius: 3px;
+    color: var(--placeholder);
 }
 
 .messages-section textarea{
+    padding: 15px;
     background-color: var(--background);
-    color: var(--placeholder);
     border:0;
-    border-radius: 5px;
-    padding-inline: 20px;
-    padding-top: 10px;
-    width: 100%;
+    border-radius: 3px;
+    color: var(--placeholder);
 }
+
 
 ::-webkit-input-placeholder{
     color:var(--placeholder);
@@ -183,14 +173,9 @@ textarea:focus{
         flex-direction: column;
     }
 
-    .ipt{
-        width: 100%;
+    .img-container{
+        justify-content: center;
     }
-
-    .right-section{
-        width: 60vw;
-    }
-    
 }
 
 @media(max-width:660px){
@@ -256,5 +241,13 @@ textarea:focus{
     .service-cards{
         justify-content: center;
         gap: 70px;
+    }
+
+    .left-section p{
+        font-size: 12;
+    }
+    
+    .left-section h1{
+        font-size: 28px;
     }
 }

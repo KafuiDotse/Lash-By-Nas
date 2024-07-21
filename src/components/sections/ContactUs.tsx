@@ -9,15 +9,16 @@ function ContactUs(){
                 <h1>Contact Us</h1>
                 <div className="contact-section-container container">
                     <div className="left-section">
-                        <img src={ContactPic} alt="" />
-                        <p>Send your messages and requests to us here.</p>
-                        <i className="fa-solid fa-arrow-right fa-2xl fa-fade arrow"></i>
+                        <div className="img-container">
+                            <img src={ContactPic} alt="" />
+                        </div>
+                        <h1>Reach Out to Us Today</h1>
+                        <p>Have questions or inquiries? We're here to help! Drop us a message and we'll get back to you promptly</p>
                     </div>
-                    <form action="" method=''>
                         <div className="right-section">
                             <div className="full-name">
-                                <input className='ipt' type="text" name="" id="" placeholder='First Name'/>
-                                <input className='ipt' type="text" name="" id="" placeholder='Last Name'/>
+                                <input type="text" name="" id="" placeholder='First Name'/>
+                                <input type="text" name="" id="" placeholder='Last Name'/>
                             </div>
                             <div className="messages-section">
                                 <input className='email' type="email" name="" id="" placeholder='Email' />
@@ -25,7 +26,6 @@ function ContactUs(){
                             </div>
                             <Button>Send Message</Button>
                         </div>
-                    </form>
                 </div>
             </div>
         </>

@@ -20,3 +20,11 @@
 ul{
   list-style: none;
 }
+
+h1{
+  color: var(--font-color);
+}
+
+p{
+  color: var(--font-color);
+}
