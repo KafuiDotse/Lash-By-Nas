@@ -4,7 +4,7 @@ import About_us from '../../assets/images/about_us.jpg'
 function About(){
     return(
         <>
-            <div className="about">
+            <div id="about" className="about">
                 <h1>Who we are</h1>
                 <div className="about-container">
                     <img src={About_us} alt="about us" />

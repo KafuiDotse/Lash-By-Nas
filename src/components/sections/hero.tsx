@@ -6,7 +6,7 @@ import Hero1 from '../../assets/images/hero1.png'
 function Hero(){
     return(
         <>
-            <div className="hero">
+            <div id="hero" className="hero">
                 <div className="container">
                     <div className='text'>
                         <h1>
